@@ -56,6 +56,7 @@ create, view, concatenate file
 3. After running all the commands, the screen should look like this
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%201.05.05%20AM.png)
 4. If you want to run the command on your own computer instead of the remote sever. You should type in `exit`. The pitcure belows shows what the terminal looks like.
+
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%201.35.45%20AM.png)
 
 
