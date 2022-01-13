@@ -1,5 +1,5 @@
 # Lab Report 1:  
-## The Best Tutorial about Loging Into a Course-specific Account on ieng6
+## The Best Tutorial about Logging Into a Course-specific Account on ieng6
 written by Shuyi Han(PID: A16470709) on Jan 12th 2022
 
 
@@ -65,6 +65,7 @@ One way to move files back and forth between server and client, in other words, 
 1. To copy a file called `My2DList.class` to the remote computer, I typed `scp My2DList.class cs15lwi22aes@ieng6.ucsd.edu:~/` . scp stands for secure copy, followed by the file name, which followed by the course account name
 2. To check if the command works, I log into ineg6 by command `ssh cs15lwi22aes@ieng6.ucsd.edu` and run `ls` to list all the file in the defualt direcotry. You can see that `My2DList.class` is there now. 
 ![Image](Screen Shot 2022-01-13 at 1.48.47 AM.png)
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%201.48.47%20AM.png)
 
 
 ## Setting An SSH Key
