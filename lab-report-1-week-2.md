@@ -86,5 +86,6 @@ To make running commands even easier and faster, I can give you three hints give
 * A quick way to stay as the client while still running a command on a remote computer is using ssh command followed by a command in quotes. Notice in the picture, after running the command, the location of terminal is still `xiaolongdeMBP:Downloads xiaolong$`.
 
 
+---
 **After reading this, I believe you are going to be more comfortable by the next time when dealing with operations relating to communication between client and account on remote server.** 
 
