@@ -57,7 +57,7 @@ create, view, concatenate file
 3. After running all the commands, the screen should look like this
 ![Image](/Users/xiaolong/Desktop/Screen Shot 2022-01-13 at 12.49.11 AM.png)
 4. If you want to run the command on your own computer instead of the remote sever. You should type in `exit`
-![Image](Screen Shot 2022-01-13 at 1.35.45 AM.png)
+![Image](/Users/xiaolong/Desktop/Screen Shot 2022-01-13 at 1.35.45 AM.png)
 
 
 ## Moving Files with scp
