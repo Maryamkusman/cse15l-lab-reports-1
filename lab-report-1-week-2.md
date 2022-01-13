@@ -35,7 +35,7 @@ Since there are always circumstances when you have to use or control remote serv
 
 1. If you have a windows system, click on [this link](https://sdacs.ucsd.edu/~icc/index.php) and download. Since I have a Mac System, I did not do this step.
 2. Then, find your own 15L's course-specific account using [this link](https://sdacs.ucsd.edu/~icc/index.php). You should change the password in order to log into the account.
-3. Open a terminal in VScode by clicking on **Terminal** on the top left of the screen, and select **New Terminal** Type in `ssh cs15lwi22aes@ieng6.ucsd.edu ` with the aes be changed with some characters in your course account. Then, type in your password after the terminal is showing `Password: `. Then, the temrinal should be looking like mine.
+3. Open a terminal in VScode by clicking on **Terminal** on the top left of the screen, and select **New Terminal** Type in `ssh cs15lwi22aes@ieng6.ucsd.edu ` with the aes be changed with some characters in your course account. Then, type in your password after the terminal shows `Password: `. It would take a few seconds for the client to conenct to the server. Example below shows no step of entering password since ssh key has been setup before (explained in later step).
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%2012.33.50%20AM.png)
 4. In here, I typed `ssh cs15lwi22aes@ieng6.ucsd.edu ` and given my password. Now, my own computer, the client's terminal  gets connected with a computer, or the server, in CSE basedment.
 
