@@ -4,7 +4,7 @@ written by Shuyi Han(PID: A16470709) on Jan 12th 2022
 
 
 ## Overview 
-The tutorial is going to walk you through every single step needed to log into a course-specific account on ieng6 and teach you some basic commands and concepts. No prior knowledge required, after reading this, you are going to be more comfortable by the next time you have to deal with operations relating account on ieng6. 
+The tutorial is going to walk you through every single step needed to log into a course-specific account on ieng6 and teach you some basic commands and concepts. No prior knowledge required! Let's get started!
 
 **What you will learn**
 * Installing VScode
@@ -14,10 +14,8 @@ The tutorial is going to walk you through every single step needed to log into a
 * Setting an SSH Key
 * Optimizing Remote Running
 
-**What you will learn**
+**What you Need**
 A laptop with one of the major operating systems 
-
-*Let's get started*
 
 
 ## Installing VScode
@@ -70,8 +68,22 @@ One way to move files back and forth between server and client, in other words, 
 
 ## Setting An SSH Key
 
-
-
-
+To avoid retyping password whenver we do a related task, we can use the `ssh` keys. The logic behind the command is a program named ssh-keygen makes two files, the public key on the server and private key on the client. `ssh` command benefits the pair of files rather than asking for the password input.
+1. run the command `ssh-keygen`
+2. After seeing the terminal showing `Enter file in which to save the key (/Users/xiaolong/.ssh/id_rsa):`, the file of private key has been created, copy the name of the file, or content in the prenthesis, and paste it as input 
+3. Ignoring the requirements of input of `Enter passphrase (empty for no passphrase): `and `Enter same passphrase again: ` by hitting Enter key
+4. As shown in the picture, the program has generated two new files on the system: the private key ended `id_rsa` and the public key ended with `id_rsa.pub`. Both of them are stored in the .ssh directory on client
+5. Since the server needs the public key to pair with client' private key and automatically open the account, we have to copy the public key from the client to .ssh directory of the server's account. To do this using `scp` command followed by public key, which is followed by ineng6 account number and .ssh direcotry. Example of my commands is `scp /Users/xiaolong/.ssh/id_rsa.pub cs15lwi22aes@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+6. As showing in the picture, after the previous commands, I do not have to enter password for doing `ssh` and `scp` from my laptop to the remote computer 
 
 ## Optimizing Remote Running
+
+To make running commands even easier and faster, I can give you three hints given 
+
+* hit the up-arrowkey on the ketboard to retrieve the previous commands if needed. 
+* Since semicolons in coding environment means the end of a command's excecution,if you want to type more than one command on the same line, seperating them by semicolons. Example is given in the picture below.
+* A quick way to stay as the client while still running a command on a remote computer is using ssh command followed by a command in quotes. Notice in the picture, after running the command, the location of terminal is still `xiaolongdeMBP:Downloads xiaolong$`.
+
+
+## After reading this, I believe you are going to be more comfortable by the next time when dealing with operations relating to communication between client and account on remote server. 
+
