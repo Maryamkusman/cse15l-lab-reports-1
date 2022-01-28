@@ -89,6 +89,8 @@ To make running commands even easier and faster, I can give you three hints give
 * hit the up-arrowkey on the ketboard to retrieve the previous commands if needed. 
 * Since semicolons in coding environment means the end of a command's excecution,if you want to type more than one command on the same line, seperating them by semicolons. Example is given in the picture below.
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%203.14.59%20AM.png)
+This will save you one key stroke than typing two steps 
+
 * A quick way to stay as the client while still running a command on a remote computer is using ssh command followed by a command in quotes. Notice in the picture, after running the command, the location of terminal is still `xiaolongdeMBP:Downloads xiaolong$`.
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%203.16.19%20AM.png)
 
