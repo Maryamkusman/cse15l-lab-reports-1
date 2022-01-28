@@ -86,14 +86,14 @@ To avoid retyping password whenver we do a related task, we can use the `ssh` ke
 
 To make running commands even easier and faster, I can give you three hints given 
 
-* hit the up-arrowkey on the ketboard to retrieve the previous commands if needed. 
+* hit the up-arrowkey on the keyboard to retrieve the previous commands if needed. 
 * Since semicolons in coding environment means the end of a command's excecution,if you want to type more than one command on the same line, seperating them by semicolons. Example is given in the picture below.
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%203.14.59%20AM.png)
-This will save you one key stroke than typing two steps 
+This will save you one key stroke than typing java WhereAmI on a separate line.
 
-* A quick way to stay as the client while still running a command on a remote computer is using ssh command followed by a command in quotes. Notice in the picture, after running the command, the location of terminal is still `xiaolongdeMBP:Downloads xiaolong$`.
+* A quick way to stay as the client while still running a command on a remote computer is using ssh command followed by a command in quotes.Notice in the picture, after running the command, the location of terminal is still `xiaolongdeMBP:Downloads xiaolong$`.
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-13%20at%203.16.19%20AM.png)
-
+* Behind this command, the computer acutally log in to the remote server(1), compile (2)and run WhereAmI.java (3), then exit the remote server(4). As a result, this single commond saves you two key strokes than giving "javac WhereAmI.java" and "exit"command on two seperate lines, semicolons save you one keystroke of giving "java WhereAmI" on a seperate line. These two shortcuts combined together to save you three keystorkes. One thing to note is this pleasant process requires SSH key being properly setup, otherwise, you would have to enter the password when connecting to the remote server. 
 ---
 **After reading this, I believe you are going to be more comfortable by the next time when dealing with operations relating to communication between client and account on remote server.** 
 
