@@ -2,7 +2,7 @@
 ## Code Change #1
 
 > code change diff from Github
-![Image](http://url/a.png)
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.11.40%20PM.png)
 
 > a failure-inducing input
 [Link](http://a.com)
