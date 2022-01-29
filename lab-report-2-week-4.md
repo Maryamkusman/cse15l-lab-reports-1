@@ -63,8 +63,8 @@ java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuy
 ```
 
 > **relationship between the bug, the symptom, and the failure-inducing input**
-
-
+> 
+Before debugging the program, after running MarkdownParse.java with the failure inducing input of image.md, the terminal prints out the image link. However,since image link should not be added to the lists of links, the output is a symptom that shows the faulty program behavior. To ensure that the systme is flawed, I add a Junit test called testImagemd(). The assert method still throws error and falsely outputs the image link. The flaw in the program, i.e. the bug is caused by failing to check the "!" mark before the bracket, which marks a image type link. To debug, the condition of ** markdown.indexOf("!") != nextOpenBracket-1 ** is added before the program executes adding a substring of Markdown to the toReturn Arraylist,so that the program checks the type of links and avoids adding image link to Toreturn aaryalsit. 
 
 
 
@@ -136,7 +136,7 @@ java.lang.AssertionError: expected:<[]> but was:<[https://something.png, https:/
 
 > **relationship between the bug, the symptom, and the failure-inducing input**
 
-
+Although the program is able to distinguih a image link by identifying the "!" before a openbracket, after running junit test testInvalidlink and main with failure-inducing input of inalidlink.md, the program shows symptoms of falsely adding image links to toReturn arraylist. The probelm of the system, or the bug is it fails to idenitity jpg,the raster image format abbreviarion at the end of the link. To debug, I add ** markdown.indexOf(".png",openParen) != closeParen-4 ** as the condition before the program's execution of adding a substring of Markdown to the toReturn Arraylist. 
 
 
 
@@ -209,3 +209,5 @@ Tests run: 5,  Failures: 1
 ```
 
 > **relationship between the bug, the symptom, and the failure-inducing input**
+The failure-indcuing input of the test is a file with an invalid link before a valid link. Specifically,the word "somehow " exists between the close bracket and the oepn parenthesis representing the same image link, thus means that this link of code shoudl not be read as a link. After running the junit testfile with  , the command line prints out both somehow and abc, instead of abc, the only valid link at the end of the file, showing clear symptoms. 
+Because the file has an invalid link before a valid link, to debug, the condition of "nextCloseBracket +1 == openParen" is added before addding the substring to reTurnList, thus program can skip the invlaid link format text, and only pritns out the valid one.
