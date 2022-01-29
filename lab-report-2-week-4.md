@@ -72,13 +72,13 @@ java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuy
 
 ## Code Change #2
 > **code change diff from Github**
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.11.40%20PM.png)
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.56.22%20PM.png)
 
 > **The link of failure-inducing input**
 [invalidlink.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/invalidlink.md)
 
 > **symptom of failure-inducing inputs after running main**
-![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.40.21%20PM.png)
+![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.55.47%20PM.png)
 ```
 
 xiaolongdeMBP:markdown-parse xiaolong$ javac MarkdownParse.java 
