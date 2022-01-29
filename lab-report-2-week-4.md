@@ -147,7 +147,7 @@ java.lang.AssertionError: expected:<[]> but was:<[https://something.png, https:/
 > **code change diff from Github**
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.22.52%20AM.png)
 
-> **The link failure-inducing input**
+> **The link of failure-inducing input**
 [whatever.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/whatever.md)
 
 > **symptom of failure-inducing inputs after running main**
