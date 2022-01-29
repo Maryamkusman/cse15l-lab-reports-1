@@ -4,7 +4,7 @@
 > **code change diff from Github**
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.11.40%20PM.png)
 
-> **The link failure-inducing input**
+> **The link of failure-inducing input**
 [image.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/image.md)
 
 > **symptom of failure-inducing inputs after running main**
@@ -74,8 +74,8 @@ java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuy
 > **code change diff from Github**
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.11.40%20PM.png)
 
-> **The link failure-inducing input**
-[image.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/image.md)
+> **The link of failure-inducing input**
+[invalidlink.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/invalidlink.md)
 
 > **symptom of failure-inducing inputs after running main**
 ![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.40.21%20PM.png)
@@ -88,7 +88,7 @@ xiaolongdeMBP:markdown-parse xiaolong$
 
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
-![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%208.44.30%20PM.png)
+![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.48.44%20PM.png)
 
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.javaxiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
