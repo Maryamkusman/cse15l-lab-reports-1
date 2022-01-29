@@ -72,7 +72,7 @@ java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuy
 
 ## Code Change #2
 > **code change diff from Github**
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.56.22%20PM.png)
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.19.36%20AM.png)
 
 > **The link of failure-inducing input**
 [invalidlink.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/invalidlink.md)
@@ -145,35 +145,35 @@ java.lang.AssertionError: expected:<[]> but was:<[https://something.png, https:/
 ## Code Change #3
 
 > **code change diff from Github**
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.11.40%20PM.png)
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.22.52%20AM.png)
 
 > **The link failure-inducing input**
-[image.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/image.md)
+[whatever.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/whatever.md)
 
 > **symptom of failure-inducing inputs after running main**
-![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.40.21%20PM.png)
+![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.26.11%20AM.png)
 ```
 
-xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse image.md  
-[https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-12%20at%2011.13.50%20PM.png]
+xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse whatever.md
+[somehow.com, abc.com]
 
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
-![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%208.44.30%20PM.png)
+![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.20.13%20AM.png)
 
 ```
-xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java            xiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.javaxiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 JUnit version 4.12
-.E..
-Time: 0.02
+.E....
+Time: 0.023
 There was 1 failure:
-1) testNew(MarkdownParseTest)
-java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-12%20at%2011.13.50%20PM.png]>
+1) testWhatever(MarkdownParseTest)
+java.lang.AssertionError: expected:<[abc.com]> but was:<[somehow.com, abc.com]>
         at org.junit.Assert.fail(Assert.java:88)
         at org.junit.Assert.failNotEquals(Assert.java:834)
         at org.junit.Assert.assertEquals(Assert.java:118)
         at org.junit.Assert.assertEquals(Assert.java:144)
-        at MarkdownParseTest.testNew(MarkdownParseTest.java:23)
+        at MarkdownParseTest.testWhatever(MarkdownParseTest.java:35)
         at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
         at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
         at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -203,6 +203,9 @@ java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuy
         at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
         at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
         at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+
+FAILURES!!!
+Tests run: 5,  Failures: 1
 ```
 
 > **relationship between the bug, the symptom, and the failure-inducing input**
