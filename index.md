@@ -1,4 +1,4 @@
-# CSE15L Lab Report 2
+# CSE15L Lab Report 
 ## Code Change #1
 
 > **code change diff from Github**
