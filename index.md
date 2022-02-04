@@ -9,11 +9,10 @@
 
 > **symptom of failure-inducing inputs after running main**
 ![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.40.21%20PM.png)
-```
 
+```
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse image.md  
 [https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-12%20at%2011.13.50%20PM.png]
-
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
 ![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%208.44.30%20PM.png)
