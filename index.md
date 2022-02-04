@@ -185,7 +185,6 @@ java.lang.AssertionError: expected:<[abc.com]> but was:<[somehow.com, abc.com]>
         at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
         at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
         at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-
 FAILURES!!!
 Tests run: 5,  Failures: 1
 ```
