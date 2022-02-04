@@ -66,7 +66,7 @@ Before debugging the program, after running MarkdownParse.java with the failure 
 
 ## Code Change #2
 > **code change diff from Github**
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.19.36%20AM.png)
+![Image](Screen%20Shot%202022-01-29%20at%2012.19.36%20AM.png)
 
 > **The link of failure-inducing input**
 [invalidlink.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/invalidlink.md)
@@ -131,7 +131,7 @@ Although the program is able to distinguih a image link by identifying the "!" b
 ## Code Change #3
 
 > **code change diff from Github**
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.22.52%20AM.png)
+![Image](Screen%20Shot%202022-01-29%20at%2012.22.52%20AM.png)
 
 > **The link of failure-inducing input**
 [whatever.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/whatever.md)
