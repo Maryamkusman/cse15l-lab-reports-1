@@ -139,7 +139,6 @@ Although the program is able to distinguih a image link by identifying the "!" b
 > **symptom of failure-inducing inputs after running main**
 ![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.26.11%20AM.png)
 ```
-
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse whatever.md
 [somehow.com, abc.com]
 ```
