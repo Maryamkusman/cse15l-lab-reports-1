@@ -8,14 +8,14 @@
 [image.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/image.md)
 
 > **symptom of failure-inducing inputs after running main**
-![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%207.40.21%20PM.png)
+![symptom of main](Screen%20Shot%202022-01-28%20at%207.40.21%20PM.png)
 
 ```
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse image.md  
 [https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-12%20at%2011.13.50%20PM.png]
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
-![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%208.44.30%20PM.png)
+![symptom of Junit](Screen%20Shot%202022-01-28%20at%208.44.30%20PM.png)
 
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java            xiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
@@ -72,7 +72,7 @@ Before debugging the program, after running MarkdownParse.java with the failure 
 [invalidlink.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/invalidlink.md)
 
 > **symptom of failure-inducing inputs after running main**
-![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.55.47%20PM.png)
+![symptom of main](Screen%20Shot%202022-01-28%20at%2010.55.47%20PM.png)
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac MarkdownParse.java 
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse invalidlink.md
@@ -80,7 +80,7 @@ xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse invalidlink.md
 xiaolongdeMBP:markdown-parse xiaolong$ 
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
-![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.48.44%20PM.png)
+![symptom of Junit](Screen%20Shot%202022-01-28%20at%2010.48.44%20PM.png)
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.javaxiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 JUnit version 4.12
@@ -136,13 +136,13 @@ Although the program is able to distinguih a image link by identifying the "!" b
 [whatever.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/whatever.md)
 
 > **symptom of failure-inducing inputs after running main**
-![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.26.11%20AM.png)
+![symptom of main](Screen%20Shot%202022-01-29%20at%2012.26.11%20AM.png)
 ```
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse whatever.md
 [somehow.com, abc.com]
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
-![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.20.13%20AM.png)
+![symptom of Junit](Screen%20Shot%202022-01-29%20at%2012.20.13%20AM.png)
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.javaxiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 JUnit version 4.12
