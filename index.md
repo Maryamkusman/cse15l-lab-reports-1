@@ -60,14 +60,9 @@ java.lang.AssertionError: expected:<[]> but was:<[https://github.com/KristinShuy
         at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
         at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 ```
-
 > **relationship between the bug, the symptom, and the failure-inducing input**
 > 
 Before debugging the program, after running MarkdownParse.java with the failure inducing input of image.md, the terminal prints out the image link. However,since image link should not be added to the lists of links, the output is a symptom that shows the faulty program behavior. To ensure that the systme is flawed, I add a Junit test called testImagemd(). The assert method still throws error and falsely outputs the image link. The flaw in the program, i.e. the bug is caused by failing to check the "!" mark before the bracket, which marks a image type link. To debug, the condition of ** markdown.indexOf("!") != nextOpenBracket-1 ** is added before the program executes adding a substring of Markdown to the toReturn Arraylist,so that the program checks the type of links and avoids adding image link to Toreturn aaryalsit. 
-
-
-
-
 
 ## Code Change #2
 > **code change diff from Github**
@@ -79,12 +74,10 @@ Before debugging the program, after running MarkdownParse.java with the failure 
 > **symptom of failure-inducing inputs after running main**
 ![symptom of main](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.55.47%20PM.png)
 ```
-
 xiaolongdeMBP:markdown-parse xiaolong$ javac MarkdownParse.java 
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse invalidlink.md
 [https://something.png, https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-12%20at%2011.13.50%20PM.png]
 xiaolongdeMBP:markdown-parse xiaolong$ 
-
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
 ![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.48.44%20PM.png)
@@ -132,7 +125,6 @@ java.lang.AssertionError: expected:<[]> but was:<[https://something.png, https:/
         at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
         at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 ```
-
 > **relationship between the bug, the symptom, and the failure-inducing input**
 
 Although the program is able to distinguih a image link by identifying the "!" before a openbracket, after running junit test testInvalidlink and main with failure-inducing input of inalidlink.md, the program shows symptoms of falsely adding image links to toReturn arraylist. The probelm of the system, or the bug is it fails to idenitity jpg,the raster image format abbreviarion at the end of the link. To debug, I add ** markdown.indexOf(".png",openParen) != closeParen-4 ** as the condition before the program's execution of adding a substring of Markdown to the toReturn Arraylist. 
