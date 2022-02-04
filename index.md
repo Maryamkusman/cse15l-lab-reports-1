@@ -81,7 +81,6 @@ xiaolongdeMBP:markdown-parse xiaolong$
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
 ![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-28%20at%2010.48.44%20PM.png)
-
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.javaxiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 JUnit version 4.12
@@ -129,10 +128,6 @@ java.lang.AssertionError: expected:<[]> but was:<[https://something.png, https:/
 
 Although the program is able to distinguih a image link by identifying the "!" before a openbracket, after running junit test testInvalidlink and main with failure-inducing input of inalidlink.md, the program shows symptoms of falsely adding image links to toReturn arraylist. The probelm of the system, or the bug is it fails to idenitity jpg,the raster image format abbreviarion at the end of the link. To debug, I add ** markdown.indexOf(".png",openParen) != closeParen-4 ** as the condition before the program's execution of adding a substring of Markdown to the toReturn Arraylist. 
 
-
-
-
-
 ## Code Change #3
 
 > **code change diff from Github**
@@ -147,11 +142,9 @@ Although the program is able to distinguih a image link by identifying the "!" b
 
 xiaolongdeMBP:markdown-parse xiaolong$  java MarkdownParse whatever.md
 [somehow.com, abc.com]
-
 ```
 > **symptom of failure-inducing inputs after running JUnit Test**
 ![symptom of Junit](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-01-29%20at%2012.20.13%20AM.png)
-
 ```
 xiaolongdeMBP:markdown-parse xiaolong$ javac -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.javaxiaolongdeMBP:markdown-parse xiaolong$ java -cp .:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 JUnit version 4.12
@@ -198,7 +191,6 @@ java.lang.AssertionError: expected:<[abc.com]> but was:<[somehow.com, abc.com]>
 FAILURES!!!
 Tests run: 5,  Failures: 1
 ```
-
 > **relationship between the bug, the symptom, and the failure-inducing input**
 The failure-indcuing input of the test is a file with an invalid link before a valid link. Specifically,the word "somehow " exists between the close bracket and the oepn parenthesis representing the same image link, thus means that this link of code shoudl not be read as a link. After running the junit testfile with  , the command line prints out both somehow and abc, instead of abc, the only valid link at the end of the file, showing clear symptoms. 
 Because the file has an invalid link before a valid link, to debug, the condition of "nextCloseBracket +1 == openParen" is added before addding the substring to reTurnList, thus program can skip the invlaid link format text, and only pritns out the valid one.
