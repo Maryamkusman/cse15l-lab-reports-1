@@ -132,7 +132,6 @@ Although the program is able to distinguih a image link by identifying the "!" b
 
 > **code change diff from Github**
 ![Image](Screen%20Shot%202022-01-29%20at%2012.22.52%20AM.png)
-
 > **The link of failure-inducing input**
 [whatever.md](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/whatever.md)
 
