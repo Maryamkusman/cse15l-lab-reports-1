@@ -9,7 +9,6 @@
 [reviewed in Wk7](https://github.com/zfxd/markdown-parse)
 
 ## Snippet 1:
-
 ```
 `[a link`](url.com)
 
@@ -47,8 +46,6 @@ java.lang.AssertionError: expected:<[`google.com, google.com, ucsd.edu]> but was
         at org.junit.Assert.assertEquals(Assert.java:146)
         at MarkdownParseTest.testSnippet1(MarkdownParseTest.java:40)
 ```
-
-
 Implementation of `MarkdwonParse.java` from other hroup also fails the test:
 ```
 Time: 0.021
@@ -61,15 +58,12 @@ java.lang.AssertionError: expected:<[`google.com, google.com, ucsd.edu]> but was
         at org.junit.Assert.assertEquals(Assert.java:146)
         at MarkdownParseTest.testSnippet1(MarkdownParseTest.java:18)
 ```
-
-
 **Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.**
 
 Yes. We just need to make sure the backticks have to come in pairs inside the outtermost bracket. To do so, I can set a variable as the value of number of backticks among the content inside the outtermost bracket by setting a forloop to compare each character in the outtermost bracket with ```, if it is equal, increments the value. 
 
 
 ## Snippet 2:
-
 ```
 [a [nested link](a.com)](b.com)
 
@@ -213,7 +207,5 @@ And there's still some more text after that.
 FAILURES!!!
 Tests run: 3,  Failures: 3
 ```
-
-
 **Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.**
 No. Since links turn invalid when one or more empty lines are entered in a complete parenthesis or brackets, or the content inside a parentheiss are broken into more than one line, or the closing braket and open parenthesis are seperated by `\n`. The program has to check all the conditions and picks everything inside the complete bracket, which would probably take more than 10 lines of code.
