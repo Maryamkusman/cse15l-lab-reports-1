@@ -4,7 +4,7 @@
 
  The link of MarkdownParse Repos
  
-[mine](https://github.com/KristinShuyiHan/markdown-parse)
+[mine](https://github.com/Maryamkusman/markdown-parse)
 
 [reviewed in Wk7](https://github.com/zfxd/markdown-parse)
 
@@ -60,7 +60,7 @@ java.lang.AssertionError: expected:<[`google.com, google.com, ucsd.edu]> but was
 ```
 **Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.**
 
-Yes. We just need to make sure the backticks have to come in pairs inside the outtermost bracket. To do so, I can set a variable as the value of number of backticks among the content inside the outtermost bracket by setting a forloop to compare each character in the outtermost bracket with ```, if it is equal, increments the value. 
+Yes. the backticks need to come together in the outermost bracket.What i did was set a variable as the value of number of backticks among the content inside the outtermost bracket by setting a forloop to compare each character in the outtermost bracket with ```, if it is equal, increments the value. 
 
 
 ## Snippet 2:
