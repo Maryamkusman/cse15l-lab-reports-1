@@ -4,7 +4,7 @@
 
  The link of MarkdownParse Repos
  
-[mine](https://github.com/KristinShuyiHan/markdown-parse)
+[mine](https://github.com/Maryamkusman/markdown-parse)
 
 [reviewed in Wk7](https://github.com/zfxd/markdown-parse)
 
